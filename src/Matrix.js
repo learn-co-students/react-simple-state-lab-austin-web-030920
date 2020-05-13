@@ -19,8 +19,8 @@ export default class Matrix extends Component {
   }
   
   genRow = (vals) => {
-    return <Cell values={vals}/>
-
+    return vals.map(val => <Cell value={val}/>) // replace me and render a cell component instead!
+    
   }
   
   genMatrix = () => {
